@@ -1,0 +1,22 @@
+{
+  "name": "mern-ecommerce-with-react-redux-express-mongodb",
+  "version": "1.0.0",
+  "description": "MERN Ecommerce application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamun060/MERN-eCommerce-with-React-Redux-Express-MongoDB.git"
+  },
+  "author": "MD AL MAMUN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mamun060/MERN-eCommerce-with-React-Redux-Express-MongoDB/issues"
+  },
+  "homepage": "https://github.com/mamun060/MERN-eCommerce-with-React-Redux-Express-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

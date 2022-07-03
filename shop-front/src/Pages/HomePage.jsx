@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Product from '../Components/Product'
-import products from '../products'
-
+// import products from '../products'
+import axios from 'axios';
 
 const HomePage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(()=> {
+    const fetchProducts = async () =>{
+      const {data} = await axios.get('/api/products');
+      setProducts(data);
+    }
+    fetchProducts()
+  },[])
+
+
   return (
     <>
       {/* <Link to='/' className='btn btn-light'>
